@@ -5,4 +5,58 @@
 body{
     margin: 0;
     font-family: Helvetica, sans-serif;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 50px 1fr 30px;
+    grid-gap: 5px;
 }
+
+nav {
+    background-color: #a2cbb6;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+nav > div{
+    font-size: 20px;
+    margin: 10px;
+    color: #f3dba8;
+}
+
+nav > div:last-child{
+    margin-left: auto;
+}
+
+aside{
+    background-color: #a2b4da;
+}
+
+main{
+    background-color: #f3dba8;
+}
+
+footer{
+    background-color: #a2cbb6;
+}
+
+nav, footer {
+    grid-column: 1 / 3;
+}
+
+.flex-ctr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+    GRID
+    CSS Grid lays out its grid items in two-dimensions
+    CSS Grids have the concept of the following:
+        -Tracks
+        -Cells
+        -Area
+        -Gap
+*/
